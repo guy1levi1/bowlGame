@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Game</title>
+    <!-- bootstrap connect -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- css connecet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Caveat&family=Handjet:wght@300;400&family=Libre+Baskerville:ital@1&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+        <h1 id="title">Game</h1>
+        <p class="discription">choose one cup to find the ball</p>
+        <p class="guesses">Remaining guesses: 4</p>
+        <!-- all the bowls -->
+        <div class="container">
+            <img class="bowl 1" src="./images/bowl.png" alt="bowl"/>
+
+            <img class="bowl 2" src="./images/bowl.png" alt="bowl"/>
+
+            <img class="bowl 3" src="./images/bowl.png" alt="bowl"/>
+
+            <img class="bowl 4" src="./images/bowl.png" alt="bowl"/>
+
+            <img class="bowl 5" src="./images/bowl.png" alt="bowl"/>
+
+            <img class="bowl 6" src="./images/bowl.png" alt="bowl"/>
+
+            <img class="bowl 7" src="./images/bowl.png" alt="bowl"/>
+
+            <img class="bowl 8" src="./images/bowl.png" alt="bowl"/>
+
+            <img class="bowl 9" src="./images/bowl.png" alt="bowl"/>
+
+            <img class="bowl 10" src="./images/bowl.png" alt="bowl"/>
+        </div>
+
+        <div class="container2">
+            <!-- game statistic -->
+            <div class="game-stats">
+                <h3>Game statistic</h3>
+                <p class="games-won">Games you won: </p>
+                <p class="games-loss">Game you loss: </p>
+                <p class="last-random">last random number: </p>
+                <p class="last-bowl">last bowl you choose: none</p>
+            </div>
+
+            <!-- won/loss enimation-->
+            <div class="waviy win hidden">
+                <span style="--i:1">y</span>
+                <span style="--i:2">o</span>
+                <span style="--i:3">u</span>
+                <span style="--i:4"> </span>
+                <span style="--i:5">w</span>
+                <span style="--i:6">i</span>
+                <span style="--i:7">n</span>
+            </div>
+
+            <div class="waviy loss hidden">
+                <span style="--i:1">y</span>
+                <span style="--i:2">o</span>
+                <span style="--i:3">u</span>
+                <span style="--i:4"> </span>
+                <span style="--i:5">l</span>
+                <span style="--i:6">o</span>
+                <span style="--i:7">s</span>
+                <span style="--i:7">s</span>
+            </div>
+            <!-- modal for game rules -->
+            <!-- Button trigger modal -->
+            <button type="button" class="gameRules btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Game rules
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Game rules</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>the bowls are 1-10 from left to rigth</li>
+                            <li>you have 4 trys to click the correct button</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    <script src="./game.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
